@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+// base^pow % mod
 int pow_mod(int base, int pow, int mod) {
   int reminder;
   if (pow == 1) {
