@@ -53,8 +53,6 @@ int main() {
   }
   short start = i; // reversely, will be the start point
 
-  cout << i << endl;
-
   /* initialize time tracker */
   int t_max = t[m-1] * pow (10, PRECISION);
   float *pos;
