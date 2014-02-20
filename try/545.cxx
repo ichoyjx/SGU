@@ -1,4 +1,8 @@
-/* idea: simulation + 暴搜 (exhaustive search)
+/*
+ * SGU 545
+ * http://acm.sgu.ru/problem.php?contest=0&problem=545
+ *
+ * idea: simulation + 暴搜 (exhaustive search)
  *       think... reversely!
  */
 #include <iostream>
@@ -51,7 +55,8 @@ int main() {
   for (i=1; i<n; i++) {
     if (rope_tracker[i] == 0) break;
   }
-  short start = i; // reversely, will be the start point
+  short a_id = i; // reversely, will be the start point
+  short b_id = p[n-2]; // last rope to *cut*
 
   /* initialize time tracker */
   int t_max = t[m-1] * pow (10, PRECISION);
